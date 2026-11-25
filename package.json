@@ -1,0 +1,26 @@
+{
+  "name": "educare-kids",
+  "version": "1.0.0",
+  "description": "Sistema Integral de Centro Infantil y Pedagógico - Arquitectura en 3 Capas",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --test",
+    "db:setup": "node scripts/setup-db.js",
+    "db:seed": "node scripts/seed-db.js"
+  },
+  "dependencies": {
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.3"
+  }
+}

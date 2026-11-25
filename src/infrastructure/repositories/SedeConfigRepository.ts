@@ -138,3 +138,4 @@ export class SedeConfigRepository implements ISedeConfigRepository {
     return Number(result.changes) > 0;
   }
 }
+

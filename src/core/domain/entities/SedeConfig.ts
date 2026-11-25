@@ -33,3 +33,4 @@ export type UpdateSedeConfigDTO = Partial<{
   normativa_interna: string;
   activo: number;
 }>;
+

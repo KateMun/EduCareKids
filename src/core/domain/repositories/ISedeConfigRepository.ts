@@ -8,3 +8,4 @@ export interface ISedeConfigRepository {
   update(id: number, data: UpdateSedeConfigDTO): SedeConfig;
   softDelete(id: number): boolean;
 }
+
