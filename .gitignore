@@ -1,0 +1,94 @@
+# ==============================================================================
+# EduCare Kids — .gitignore
+# Proyecto: Sistema Integral de Centro Infantil y Pedagógico
+# Stack: React / Next.js, Node.js / TypeScript, SQLite (3FN), Jest / Vitest
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Dependencias y Gestores de Paquetes
+# ------------------------------------------------------------------------------
+node_modules/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.js
+
+# ------------------------------------------------------------------------------
+# Compilación y Salidas de Producción (Next.js / TypeScript)
+# ------------------------------------------------------------------------------
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# ------------------------------------------------------------------------------
+# Variables de Entorno y Secretos (Seguridad)
+# ------------------------------------------------------------------------------
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------------------------------------------------------
+# Base de Datos SQLite (Persistencia local, bloqueos y journals)
+# ------------------------------------------------------------------------------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+# ------------------------------------------------------------------------------
+# Pruebas y Cobertura (Jest / Vitest)
+# ------------------------------------------------------------------------------
+coverage/
+.nyc_output/
+test-results/
+junit.xml
+
+# ------------------------------------------------------------------------------
+# Logs y Diagnóstico de Ejecución
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# IDEs y Editores de Código
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ------------------------------------------------------------------------------
+# Archivos Temporales del Sistema Operativo
+# ------------------------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes
+
