@@ -269,3 +269,4 @@ CREATE INDEX IF NOT EXISTS idx_bloqueos_fecha ON bloqueos_viales (fecha_bloqueo,
 CREATE INDEX IF NOT EXISTS idx_bonos_familia_estado ON bonos_familias (id_familia, estado_bono);
 CREATE INDEX IF NOT EXISTS idx_cuidados_cita_menor ON registros_cuidados (id_cita, id_menor);
 CREATE INDEX IF NOT EXISTS idx_facturas_familia ON facturas_usuarios (id_familia, estado_pago);
+

@@ -341,3 +341,4 @@ CREATE INDEX IF NOT EXISTS idx_cuidados_cita_menor ON registros_cuidados (id_cit
 
 -- Facturación por familia y estado de pago
 CREATE INDEX IF NOT EXISTS idx_facturas_familia ON facturas_usuarios (id_familia, estado_pago);
+
