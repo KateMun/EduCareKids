@@ -1,8 +1,12 @@
-import { ISedeConfigRepository } from '../domain/repositories/ISedeConfigRepository';
-import { SedeConfig, CreateSedeConfigDTO, UpdateSedeConfigDTO } from '../domain/entities/SedeConfig';
+import type { ISedeConfigRepository } from '../domain/repositories/ISedeConfigRepository.ts';
+import type { SedeConfig, CreateSedeConfigDTO, UpdateSedeConfigDTO } from '../domain/entities/SedeConfig.ts';
 
 export class SedeConfigService {
-  constructor(private sedeRepo: ISedeConfigRepository) {}
+  private sedeRepo: ISedeConfigRepository;
+
+  constructor(sedeRepo: ISedeConfigRepository) {
+    this.sedeRepo = sedeRepo;
+  }
 
   /**
    * CREATE: Registra una nueva configuración de sede central.

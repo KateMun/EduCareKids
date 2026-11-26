@@ -1,7 +1,7 @@
 import { DatabaseSync } from 'node:sqlite';
-import { SedeConfig, CreateSedeConfigDTO, UpdateSedeConfigDTO } from '../../core/domain/entities/SedeConfig';
-import { ISedeConfigRepository } from '../../core/domain/repositories/ISedeConfigRepository';
-import { DatabaseConnection } from '../database/connection';
+import type { SedeConfig, CreateSedeConfigDTO, UpdateSedeConfigDTO } from '../../core/domain/entities/SedeConfig.ts';
+import type { ISedeConfigRepository } from '../../core/domain/repositories/ISedeConfigRepository.ts';
+import { DatabaseConnection } from '../database/connection.ts';
 
 export class SedeConfigRepository implements ISedeConfigRepository {
   private db: DatabaseSync;
