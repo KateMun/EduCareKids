@@ -16,3 +16,4 @@ export const TEST_CONFIG = {
     activo: 1,
   },
 };
+

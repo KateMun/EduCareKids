@@ -33,9 +33,8 @@ export class DatabaseConnection {
   public static initSchema(db: DatabaseSync): void {
     // Busca el schema.sql maestro
     const possiblePaths = [
-      path.resolve(__dirname, 'schema.sql'),
-      path.resolve(__dirname, '..', '..', '..', 'src', 'infrastructure', 'database', 'schema.sql'),
-      path.resolve(process.cwd(), 'src', 'infrastructure', 'database', 'schema.sql')
+      path.resolve(process.cwd(), 'src', 'infrastructure', 'database', 'schema.sql'),
+      path.resolve(process.cwd(), 'migrations', '001_initial_schema.sql'),
     ];
 
     for (const p of possiblePaths) {
