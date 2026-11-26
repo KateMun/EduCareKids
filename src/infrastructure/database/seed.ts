@@ -115,3 +115,4 @@ export function seedDatabase(db: DatabaseSync): SeedResult {
     throw error;
   }
 }
+

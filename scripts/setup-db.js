@@ -38,3 +38,4 @@ try {
   console.error('\nERROR durante la inicialización de la base de datos:', error.message);
   process.exit(1);
 }
+

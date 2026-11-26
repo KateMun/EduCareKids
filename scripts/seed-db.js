@@ -121,3 +121,4 @@ try {
   console.error('\nERROR durante el sembrado de datos:', error.message);
   process.exit(1);
 }
+
